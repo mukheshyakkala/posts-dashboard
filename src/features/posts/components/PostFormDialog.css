@@ -1,0 +1,113 @@
+
+/* Dialog container */
+.post-dialog {
+  border-radius: var(--radius-lg, 14px) !important;
+  background-color: var(--color-surface, #ffffff);
+}
+
+/* Dialog title */
+.post-dialog__title {
+  padding: 24px 24px 12px !important;
+  color: var(--color-text, #0f172a);
+  font-size: 22px !important;
+  font-weight: 700 !important;
+}
+
+/* Dialog content */
+.post-dialog__content {
+  padding: 8px 24px 16px !important;
+}
+
+/* Form fields */
+.post-dialog__field {
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.post-dialog__field .MuiOutlinedInput-root {
+  border-radius: var(--radius-sm, 6px);
+  background-color: var(--color-surface, #ffffff);
+}
+
+.post-dialog__field .MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: var(--color-primary, #2563eb);
+}
+
+.post-dialog__field .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: var(--color-primary, #2563eb);
+}
+
+.post-dialog__field .MuiInputLabel-root.Mui-focused {
+  color: var(--color-primary, #2563eb);
+}
+
+/* Description field */
+.post-dialog__description-field .MuiInputBase-root {
+  align-items: flex-start;
+}
+
+/* Validation error */
+.post-dialog__error {
+  margin: 8px 0 0;
+  color: var(--color-danger, #dc2626);
+  font-size: 13px;
+}
+
+/* Dialog action buttons */
+.post-dialog__actions {
+  display: flex;
+  gap: 10px;
+  padding: 16px 24px 24px !important;
+}
+
+.post-dialog__cancel-button {
+  color: var(--color-secondary, #475569) !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+}
+
+.post-dialog__submit-button {
+  padding: 8px 18px !important;
+  border-radius: var(--radius-sm, 6px) !important;
+  background-color: var(--color-primary, #2563eb) !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+}
+
+.post-dialog__submit-button:hover {
+  background-color: var(--color-primary-hover, #1d4ed8) !important;
+  box-shadow: none !important;
+}
+
+.post-dialog__submit-button.Mui-disabled {
+  opacity: 0.6;
+}
+
+/* Mobile responsive */
+@media (max-width: 500px) {
+  .post-dialog__title {
+    padding: 20px 20px 10px !important;
+    font-size: 20px !important;
+  }
+
+  .post-dialog__content {
+    padding: 8px 20px 12px !important;
+  }
+
+  .post-dialog__actions {
+    padding: 12px 20px 20px !important;
+  }
+}
+
+.post-form-dialog__error {
+  color: var(--color-danger, #dc2626);
+  font-size: 14px;
+  margin: 12px 0 0;
+}
+
+.post-form-dialog__actions {
+  padding: 16px !important;
+}

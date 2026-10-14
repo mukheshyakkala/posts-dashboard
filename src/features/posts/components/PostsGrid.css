@@ -1,0 +1,70 @@
+.posts-grid {
+  width: 100%;
+  min-width: 0;
+  background-color: var(--color-surface, #ffffff);
+}
+
+.posts-grid__mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.posts-grid__empty {
+  text-align: center;
+  padding: 32px 0;
+  color: var(--color-text-muted, #64748b);
+}
+
+/* Data grid root */
+.posts-grid .MuiDataGrid-root {
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: var(--radius-md, 12px);
+  color: var(--color-text, #0f172a);
+  background-color: var(--color-surface, #ffffff);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+}
+
+/* Rich Header Styling */
+.posts-grid .MuiDataGrid-columnHeaders {
+  background: linear-gradient(0deg, #f8fafc, #f1f5f9);
+  border-bottom: 2px solid var(--color-border, #e2e8f0);
+}
+
+.posts-grid .MuiDataGrid-columnHeaderTitle {
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 0.875rem;
+}
+
+/* Alternating Row Colors (Zebra Striping) */
+.posts-grid .MuiDataGrid-row:nth-of-type(even) {
+  background-color: #fafbfc;
+}
+
+.posts-grid .MuiDataGrid-row {
+  transition: background-color 0.15s ease;
+}
+
+.posts-grid .MuiDataGrid-row:hover {
+  background-color: var(--color-surface-hover, #f1f5f9) !important;
+}
+
+.posts-grid .MuiDataGrid-cell {
+  color: var(--color-text, #0f172a);
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.posts-grid__delete-button {
+  color: #ef4444 !important;
+}
+
+.posts-grid__delete-button:hover {
+  background-color: rgb(239 68 68 / 10%) !important;
+}
+
+.posts-grid .MuiDataGrid-footerContainer {
+  border-top: 1px solid var(--color-border, #e2e8f0);
+  background-color: #f8fafc;
+}

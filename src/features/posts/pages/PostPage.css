@@ -1,0 +1,202 @@
+
+/* Main page */
+.posts-page {
+  min-height: 100vh;
+  background: var(--color-page, #f4f6f8);
+}
+
+
+/* Fixed header */
+.posts-page__appbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1200;
+  width: 100%;
+}
+
+/* Header layout */
+.posts-page__toolbar {
+  display: flex;
+  justify-content: space-between;
+  min-height: 64px;
+}
+
+/* Content starts below the fixed header */
+.posts-page__content {
+  padding-top: 64px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.posts-page__container {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+/* Responsive header height */
+@media (max-width: 600px) {
+  .posts-page__toolbar {
+    min-height: 56px;
+  }
+
+  .posts-page__content {
+    padding-top: 56px;
+  }
+
+  .posts-page__container {
+    padding-top: 16px;
+  }
+}
+
+/* Application header */
+.posts-page__appbar {
+  background-color: var(--color-primary, #2563eb) !important;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 12%) !important;
+}
+
+.posts-page__toolbar {
+  min-height: 64px;
+}
+
+.posts-page__brand {
+  flex-grow: 1;
+  font-weight: 700 !important;
+  letter-spacing: 0.2px;
+}
+
+.posts-page__appbar-label {
+  opacity: 0.9;
+}
+
+/* Main content */
+.posts-page__container {
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.posts-page__header {
+  margin-bottom: 24px;
+}
+
+.posts-page__title {
+  margin-bottom: 6px !important;
+  color: var(--color-text, #0f172a);
+  font-weight: 700 !important;
+  letter-spacing: -0.5px;
+}
+
+.posts-page__subtitle {
+  color: var(--color-text-muted, #64748b);
+}
+
+/* Add button */
+/* Header Container */
+.posts-page__header {
+  width: 100%;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+/* Add Post Button - Pinned to the Far Right Corner */
+.posts-page__add-button {
+  min-height: 40px;
+  padding: 9px 18px !important;
+  border-radius: var(--radius-sm, 6px) !important;
+  background-color: var(--color-primary, #2563eb) !important;
+  color: var(--color-text-inverse, #ffffff) !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  white-space: nowrap !important;
+  
+  /* Force Right Corner Positioning */
+  margin-left: auto !important;
+  align-self: center !important;
+}
+
+.posts-page__add-button:hover {
+  background-color: var(--color-primary-hover, #1d4ed8) !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 599px) {
+  .posts-page__header {
+    flex-direction: row !important; /* Retains row layout so button stays in top-right */
+    align-items: center !important;
+  }
+}
+
+/* Search */
+.posts-page__search {
+  margin-bottom: 20px !important;
+  background-color: var(--color-surface, #ffffff);
+  border-radius: var(--radius-sm, 6px);
+}
+
+.posts-page__search .MuiOutlinedInput-root {
+  border-radius: var(--radius-sm, 6px);
+}
+
+.posts-page__search .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--color-primary, #2563eb);
+}
+
+/* Error message */
+.posts-page__error {
+  margin-bottom: 20px;
+  border-radius: var(--radius-sm, 6px) !important;
+}
+
+/* Data grid container */
+.posts-page__grid {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  padding: 16px;
+  background: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: var(--radius-lg, 14px);
+  box-shadow: var(--shadow-card, 0 4px 16px rgb(15 23 42 / 6%));
+}
+
+/* Record count */
+.posts-page__count {
+  margin-top: 16px !important;
+  color: var(--color-text-muted, #64748b);
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .posts-page__toolbar {
+    min-height: 56px;
+  }
+
+  .posts-page__brand {
+    font-size: 1rem !important;
+  }
+
+  .posts-page__appbar-label {
+    font-size: 0.75rem;
+  }
+
+  .posts-page__container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .posts-page__title {
+    font-size: 1.75rem !important;
+  }
+
+  .posts-page__add-button {
+    align-self: flex-start;
+  }
+
+  .posts-page__grid {
+    padding: 8px;
+  }
+}
